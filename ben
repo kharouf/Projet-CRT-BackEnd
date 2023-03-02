@@ -1,0 +1,87 @@
+// {
+// "num_dossier":"CRTGHV",
+    
+
+// "nom":"wala",
+// "prenom":"kharouf",
+// "sexe":"homme",
+// "nom_pere":"abdeselem",
+// "nom_prenom_mere":"habiba beji",
+// "date_n":"05/08/1996",
+// "lieu_n":"Gabes",
+// "adresse":"rue ibn khaldoun ",
+// "cin":"13232062",
+// "Annee_volontariat":"2018",
+// "profession":"etudiant",
+// "num_tele":"24243586",
+// "email":"kharoufwala24@gmail.com",
+// "niveau":"bac+5",
+// "diplome":"FSG",
+// "nom_etablisement":"FSG",
+// "loisir":"volantaire",
+// "image":"wala",
+//  "isBenevole":true
+// }
+
+
+// {
+      
+      
+//       "name": "The Adventures of Kira and Morrison",
+//       "description": "The Adventures of Kira and Morrison is coming to Snickertown in a can't miss performance.",
+//       "image": [
+//         "https://img.freepik.com/free-vector/floral-wedding-invitation-card-template_52683-20098.jpg?w=740&t=st=1677530356~exp=1677530956~hmac=ce8c8060bd3ad1beff74e6686e830bdd5d31236b6982d0d3529fe68087f785ba",
+//         "https://img.freepik.com/free-vector/floral-wedding-invitation-card-template_52683-20098.jpg?w=740&t=st=1677530356~exp=1677530956~hmac=ce8c8060bd3ad1beff74e6686e830bdd5d31236b6982d0d3529fe68087f785ba",
+//         "https://img.freepik.com/free-vector/floral-wedding-invitation-card-template_52683-20098.jpg?w=740&t=st=1677530356~exp=1677530956~hmac=ce8c8060bd3ad1beff74e6686e830bdd5d31236b6982d0d3529fe68087f785ba"
+//        ],
+//       "startDate": "2023-02-29T19:12-05:00",
+//       "endDate": "2023-02-29T23:16-05:00",
+      
+//         }
+
+
+"num_dossier": 1
+
+// بيانات خاصة بصاحب الحق
+"nom":"wala"
+"prenom": "kharouf"
+
+"date_n": "05/08/1996"
+"lieu_n": "Gabes"
+
+"localisation": "rue"
+"num_tele": "24243586"
+"cin":"13232025"
+"type_Carte_traitement": "CNSS"
+"num_securite_sociale": "123456789548"
+// بيانات خاصة بالقرين
+"nom": "habiba"
+"prenom": "beji"
+
+date_n: "25/05/1959"
+"lieu_n": "gabes"
+
+"cin": "12354655"
+// الحالة المدنية
+// حالة وفاة
+"Deces": false
+// حالة طلاق
+
+"divorce": false
+// حالة اعاقة
+"handicap": false
+// مكان عمل الزوج
+"lieu_travail_mari": "ghannouche"
+"lieu_travail_mari": " "
+// الأبناء
+"fils": [{
+    "nom": "ali",
+    "prenom": "beji",
+    "date_n":"01/12/1996",
+    "annee_scolaire": "secondaire",
+    "sexe": "homme"
+}],
+// وضع مقر السكن
+"detailes": "fatigue"
+"image": "wala"
+"Commentaire": "waa"

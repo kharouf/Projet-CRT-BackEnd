@@ -1,6 +1,8 @@
 
 // import express
 const express = require('express')
+const cors = require('cors')
+
 // import data base
 const connectDB = require('./config/connectDB.js')
 // Initialize the app
@@ -10,15 +12,20 @@ mongoose.set('strictQuery', true)
 // config dotenv
 require('dotenv').config()
 connectDB()
-// create middelware contact
-app.use(express.json())
-
-app.use('/contact' , require('./routes/contact'))
-
 // create middelware user
 app.use(express.json())
-
+app.use(cors())
 app.use('/user' , require('./routes/user'))
+
+// create middelware benevole
+
+app.use('/benevole' , require('./routes/benevole'))
+// create middelware evenemet
+
+
+app.use('/evenement', require('./routes/evenement'))
+app.use('/famillesP' , require('./routes/famillesPauvres'))
+
 
 const PORT = process.env.PORT || 5000
 

@@ -4,6 +4,7 @@ const schema = mongoose.Schema
 
 
 const Userschema = new schema({
+   
    name:{
     type:String,
     required:true
@@ -20,6 +21,14 @@ const Userschema = new schema({
     type:String,
     required:true
    },
+   isAdmin:{
+      type:Boolean,
+      default:false
+     },
+     isBenevole:{
+      type:Boolean,
+      default:false
+     }
    
    
 

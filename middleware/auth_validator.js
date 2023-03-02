@@ -32,8 +32,6 @@ exports.validation = (req, res, next) => {
     console.log(errors)
     if(!errors.isEmpty()){
        return res.status(400).send({ errors: errors.array().map(el => el.msg) });
-    
-       
     } 
     next()
 }

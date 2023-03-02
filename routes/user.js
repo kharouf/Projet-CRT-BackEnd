@@ -17,9 +17,9 @@ const isAuth = require("../middleware/passport")
 
 // Register
 userRouter.post('/register',registerRules(),validation, async (req, res) => {
-const {name,lastName,email,password}= (req.body)
+const {name,lastName,email,password,isAdmin,isBenevole}= (req.body)
     try {
-        const newuser = new user({name,lastName,email,password})
+        const newuser = new user({name,lastName,email,password,isAdmin,isBenevole})
          // check if the email exist
          const emailExist = await user.findOne({email})
          if (emailExist) {
@@ -29,13 +29,12 @@ const {name,lastName,email,password}= (req.body)
         const salt = await bcrypt.genSalt(10)
         newuser.password = await bcrypt.hash(newuser.password, salt)
          // create a token
-         const token = await jwt.sign({id: newuser._id}, process.env.JWT_SECRET, {expiresIn: '1h'})
+        
+         const token = await jwt.sign({id: newuser._id}, process.env.JWT_SECRET, {expiresIn: 3600})
         // save the user 
-        await newuser.save()
-        res.status(200).send({newuser, message: 'User registered successfully' , token: `Bearer ${token}`})
+       const newUserToken=  await newuser.save()
+        res.status(200).send({newUserToken, message: 'User registered successfully' , token: `Bearer ${token}`})
 
-        
-        
     } catch (error) {
         console.log(error)
         res.status(500).send("can not save user")
@@ -61,7 +60,7 @@ userRouter.post('/login', loginRules(),validation, async (req, res) => {
             return res.status(400).send({message: 'Password is incorrect'})
         }
         // create a token
-        const token = await jwt.sign({id: userLogin._id}, process.env.JWT_SECRET, {expiresIn: '1h'})
+        const token = await jwt.sign({id: userLogin._id}, process.env.JWT_SECRET, {expiresIn: 3600})
         // !console.log(token)
         
         

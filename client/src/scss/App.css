@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+
+ .CRT{
+  width: 98.8vw;
+  height: 760px;
+  /* background-image: url("../assets/images/1.JPG"); */
+  background-size: cover;
+  /* border: 1px solid red; */
+
+ }
+ #home,
+ #about,
+ #event,
+ #comite,
+ #principes,
+ #programs,
+ #contact {
+   min-height: 60vh;
+   text-align: center;
+   background: #ffffff;
+   box-shadow: rgba(0, 0, 0, 0.28) 0 30px 30px -20px;
+   height: auto;
+   bottom: 0;
+   position: relative;
+ }
+ 
+
+
+  
+  .zoom-carousel{
+    margin: 100px;
+  }
+  .each-slideshow-indicator {
+    display: none ;
+  }
