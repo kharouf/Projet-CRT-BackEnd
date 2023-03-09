@@ -8,7 +8,7 @@ const famillesPauvresschema = new schema({
     num_dossier: {
         type: String,
         required: true,
-        default: "CRTGHF"
+        value: "CRTGHF"
 
     },
     // بيانات خاصة بصاحب الحق
@@ -33,6 +33,10 @@ const famillesPauvresschema = new schema({
         type: [String],
         required: true
     },
+    adresse: {
+        type: String,
+        required: true
+    },
     num_tele: {
         type: Number,
         required: true
@@ -49,6 +53,8 @@ const famillesPauvresschema = new schema({
         type: Number,
         required: true
     },
+  
+    // 
     // بيانات خاصة بالقرين
     nom_m: {
         type: String,
@@ -86,6 +92,16 @@ const famillesPauvresschema = new schema({
         type: Boolean
 
     },
+    malade: {
+        type: String
+
+    },
+      //
+      // المهنة
+      travail: {
+        type: String,
+        required: true
+    },
     // مكان عمل الزوج
     lieu_travail_mari: {
         type: String
@@ -101,7 +117,9 @@ const famillesPauvresschema = new schema({
         prenom_f: String,
         date_n_f: Date,
         annee_scolaire: String,
-        sexe_f: String
+        sexe_f: String,
+        taille_f: String,
+
     }],
     // وضع مقر السكن
     detailes: {

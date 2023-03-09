@@ -15,8 +15,9 @@ passport.use(
             
 
                 user?done(null,user):done(null,false)
-                
-            
+                // how client connecter 
+            // req.user=user  
+            // 
              
         } catch (error) {
             console.log(error)

@@ -1,13 +1,22 @@
-.container-p{
+.container-pp{
     display: flex;
-    border: 1px solid black;
-    
+    /* border: 1px solid black; */
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+    column-gap: 30px;
+    padding: 1cm;
+    width: 80vw;
+    margin: 0 auto;
+    flex-direction: row-reverse;
 }
 
 .card {
     overflow: visible;
     width: 300px;
     height: 400px !important;
+    margin-top: 1cm;
   }
   
   .content {
@@ -20,10 +29,10 @@
   }
   
   .front, .back {
-    background-color: #151515;
+    background-color: #cfcece;
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 300px;
+    height: 400px !important;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     border-radius: 5px;
@@ -53,16 +62,32 @@
     position: absolute;
     width: 99%;
     height: 99%;
-    background-color: #151515;
+    background-color: #968f8f;
     border-radius: 5px;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
+    overflow: hidden;
   }
-  
+  .back-content h1{
+  margin-bottom: 20px;
+  font-size: 30px;
+  }
+  .front-content img{
+border-radius: 10px;
+width: 100%;
+height: 60%;
+
+  }
+  .front-content h1{
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.7em;
+    
+      }
   .card:hover .content {
     transform: rotateY(180deg);
   }
@@ -80,6 +105,18 @@
   .front {
     transform: rotateY(180deg);
     color: white;
+   
+  }
+  
+  .front .front-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
   }
   
   .front .front-content {
@@ -103,28 +140,20 @@
   .description {
     box-shadow: 0px 0px 10px 5px #00000088;
     width: 100%;
+    height: 150px;
     padding: 10px;
     background-color: #00000099;
     backdrop-filter: blur(5px);
     border-radius: 5px;
+    margin-top: -5cm;
+    
   }
   
-  .title {
-    font-size: 11px;
-    max-width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
+
+ 
+
+
   
-  .title p {
-    width: 50%;
-  }
-  
-  .card-footer {
-    color: #ffffff88;
-    margin-top: 5px;
-    font-size: 8px;
-  }
   
   .front .img {
     position: absolute;
@@ -145,7 +174,7 @@
   }
   
   #bottom {
-    background-color: #ff8866;
+    background-color: #ff3700;
     left: 50px;
     top: 0px;
     width: 150px;

@@ -7,7 +7,7 @@ const Benevoleschema = new schema({
     num_dossier:{
         type:String,
         required:true,
-        default:"CRTGHV"
+        value:"CRTGHV"
         
        },
    nom:{
@@ -30,6 +30,11 @@ const Benevoleschema = new schema({
     type:String,
     required:true
    },
+//    
+   num_tele_parents:{
+    type:Number,
+   },
+//    
    date_n:{
     type:Date,
     required:true
@@ -43,7 +48,7 @@ const Benevoleschema = new schema({
    },
    cin:{
     type:Number,
-    required:true
+    
    },
    Annee_volontariat:{
     type:Number,
@@ -67,6 +72,10 @@ const Benevoleschema = new schema({
     type:String,
     
    },
+   certificat_crt:{
+      type:String,
+      
+     },
    nom_etablisement:{
     type:String,
     
@@ -75,14 +84,28 @@ const Benevoleschema = new schema({
     type:String,
     
    },
+   secouriste:{
+      type:String,
+      
+     },
+
+
    image:{
     type:String,
 
    },
-     isBenevole:{
-      type:Boolean,
-      default:true
+//   admin 
+     commentaire:{
+      type:String,
+      
+     },
+     nb_participation:{
+      type:String,
+      
      }
+    //  
+
+    //  
    
    
 

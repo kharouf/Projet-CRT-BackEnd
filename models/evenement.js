@@ -7,22 +7,22 @@ const Evenementschema = new schema({
    
    name:{
     type:String,
-    required:true
+    
    },
    description:{
     type:String,
-    required:true
+    
    },
    image:{
     type:[String]
        
    },
    startDate:{
-    type:String,
+    type:Date,
     
    },
    endDate:{
-    type:String,
+    type:Date
     
    }
 }

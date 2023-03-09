@@ -9,7 +9,8 @@ import Carousel from './Carousel'
 const Home = () => {
  
   return (
-      <div className='CRT'>
+      <div className='CRT' >
+
          <Carousel/>
         
         

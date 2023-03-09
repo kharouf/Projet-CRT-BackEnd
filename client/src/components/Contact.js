@@ -32,7 +32,7 @@ const Contact = () => {
 
           </iframe>
         </div>
-        <div className="form">
+        <div className="form ">
           <h1>إتصل بنا </h1>
           <div className="form-name">
             <div className="form-name-name">
@@ -55,9 +55,13 @@ const Contact = () => {
             <label htmlFor="">رسالة</label>
             <textarea placeholder='رسالة' name="" id="" cols="30" rows="10"></textarea>
           </div>
-          <div className="btn">
-            <button>إرسال رسالة</button>
-          </div>
+
+          <button className='btn-send'>
+            
+        إرسال رسالة
+          </button>
+
+
         </div>
 
       </div>
@@ -67,34 +71,34 @@ const Contact = () => {
 
         <div className="contact-social">
           <div className="tele">
-            
-              < BsFillTelephoneFill className='link' style={iconStylesmd1} />
-              
-              <h3>+216 53 800 745</h3>
-            
+
+            < BsFillTelephoneFill className='link' style={iconStylesmd1} />
+
+            <h3>+216 53 800 745</h3>
+
           </div>
           <div className="gmail">
-            
 
-              < CgMail className='link' style={iconStylesmd2} />
-              
-              <h3>crt.ghannouche
-                @gmail.com</h3>
-            
+
+            < CgMail className='link' style={iconStylesmd2} />
+
+            <h3>crt.ghannouche
+              @gmail.com</h3>
+
           </div>
           <div className="insta">
-            
-              < BsInstagram className='link' style={iconStylesmd} />
-              
-              <h3>الهلال الأحمر بغنوش</h3>
-            
+
+            < BsInstagram className='link' style={iconStylesmd} />
+
+            <h3>الهلال الأحمر بغنوش</h3>
+
 
           </div>
           <div className="localisation">
-          
-              < MdLocationPin className='link' style={iconStylesmd} />
-              <h3> شارع الحبيب بورقيبة <br/> غنوش</h3>
-            
+
+            < MdLocationPin className='link' style={iconStylesmd} />
+            <h3> شارع الحبيب بورقيبة <br /> غنوش</h3>
+
           </div>
 
         </div>

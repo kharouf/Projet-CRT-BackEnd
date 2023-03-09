@@ -1,12 +1,13 @@
+
+
 // {
 // "num_dossier":"CRTGHV",
-    
-
 // "nom":"wala",
 // "prenom":"kharouf",
 // "sexe":"homme",
 // "nom_pere":"abdeselem",
 // "nom_prenom_mere":"habiba beji",
+// "num_tele_parents":"24243588",
 // "date_n":"05/08/1996",
 // "lieu_n":"Gabes",
 // "adresse":"rue ibn khaldoun ",
@@ -17,10 +18,13 @@
 // "email":"kharoufwala24@gmail.com",
 // "niveau":"bac+5",
 // "diplome":"FSG",
+// "certificat_crt":"secourisme",
 // "nom_etablisement":"FSG",
 // "loisir":"volantaire",
+// "secouriste":"oui",
 // "image":"wala",
-//  "isBenevole":true
+//  "commentaire":"bien",
+//  "nb_participation":"3"
 // }
 
 
@@ -50,6 +54,7 @@
 "lieu_n": "Gabes"
 
 "localisation": "rue"
+"adresse": "Gol"
 "num_tele": "24243586"
 "cin":"13232025"
 "type_Carte_traitement": "CNSS"
@@ -70,7 +75,9 @@ date_n: "25/05/1959"
 "divorce": false
 // حالة اعاقة
 "handicap": false
+"malade": "ddddd",
 // مكان عمل الزوج
+   "travail": "aaaaaaaaaaaa",
 "lieu_travail_mari": "ghannouche"
 "lieu_travail_mari": " "
 // الأبناء
@@ -79,7 +86,8 @@ date_n: "25/05/1959"
     "prenom": "beji",
     "date_n":"01/12/1996",
     "annee_scolaire": "secondaire",
-    "sexe": "homme"
+    "sexe": "homme",
+    "taille_f": "xl"
 }],
 // وضع مقر السكن
 "detailes": "fatigue"

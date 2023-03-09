@@ -17,9 +17,9 @@ const isAuth = require("../middleware/passport")
 
 // Register
 userRouter.post('/register',registerRules(),validation, async (req, res) => {
-const {name,lastName,email,password,isAdmin,isBenevole}= (req.body)
+const {name,lastName,email,password}= (req.body)
     try {
-        const newuser = new user({name,lastName,email,password,isAdmin,isBenevole})
+        const newuser = new user({name,lastName,email,password})
          // check if the email exist
          const emailExist = await user.findOne({email})
          if (emailExist) {
@@ -78,7 +78,7 @@ userRouter.post('/login', loginRules(),validation, async (req, res) => {
 })
 // Get  user
 userRouter.get('/current', isAuth(), (req, res) => 
-   res.status(200).send(req.user)
+   res.status(200).send({user:req.user})
 )
 
 module.exports = userRouter

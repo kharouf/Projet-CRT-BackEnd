@@ -3,6 +3,7 @@
     width: 98.8vw;
     height: 600px;
     /* border: 1px solid; */
+/* margin-top: 2cm; */
 
  
     
@@ -74,10 +75,10 @@
     border: none;
     font-size: 1.5em;
     /* font-weight: bold; */
-    width: 140px;
-    height: 45px;
+    width: auto;
+    height: 60px;
     border-radius: 15px;
-    padding: 5px;
+    padding: 10px;
     font-weight: bold;
 
    }
